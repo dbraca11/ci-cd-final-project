@@ -1,0 +1,11 @@
+name: Flujo de trabajo de CI
+workflow triggers: push en la rama principal y pull_request en la rama principal
+Jobs
+runs-on: ubuntu-latest
+container: python:3.9-slim
+Paso de Checkout:
+name: Checkout
+uses: actions/checkout@v3
+Paso de Instalación de Dependencias:
+name: Instalar dependencias
+run python -m pip install --upgrade pip y pip install -r requirements.txt comandos
